@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Redirect</title>
     <script>
-      window.location.href = '/translit/';
+      const path = window.location.pathname.replace('/translit', '');
+      window.location.href = 'https://транслитератион.рф' + path;
     </script>
   </head>
 </html>
