@@ -1,3 +1,25 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*?*
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+Sitemap: https://транслитератион.рф/sitemap.xml
+
+# Для Googlebot
+User-agent: Googlebot
+Allow: /$
+Allow: /transliterate/
+Disallow: /static/
+
+# Для Yandex
+User-agent: Yandex
+Allow: /$
+Allow: /transliterate/
+Clean-param: ref /transliterate/
+Host: https://транслитератион.рф
